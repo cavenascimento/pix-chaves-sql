@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pix em números: chaves e usuários | Banco Central</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#EEF3F7;--surf:#fff;--ink:#0E1F2E;--mut:#5A6B7B;--line:#DAE2E9;--ac:#1F6FEB}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B141C;--surf:#12202B;--ink:#E8EEF4;--mut:#94A5B5;--line:#223340;--ac:#5AA9FF}}
+:root[data-theme="dark"]{--bg:#0B141C;--surf:#12202B;--ink:#E8EEF4;--mut:#94A5B5;--line:#223340;--ac:#5AA9FF}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.55 "Plus Jakarta Sans",system-ui,sans-serif}
+header{background:linear-gradient(120deg,#071E45,#0B5C8A 60%,#12A39A);color:#fff;padding:32px 20px 64px}.w{max-width:1100px;margin:0 auto}
+header small{letter-spacing:.08em;text-transform:uppercase;color:#B5D6E6;font-weight:600;font-size:12px}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.08;margin:6px 0 10px;font-weight:800;letter-spacing:-.02em}header p{margin:0;color:#C9E1EC;max-width:64ch}
+main{max-width:1100px;margin:-38px auto 0;padding:0 20px 40px}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:16px}
+.k{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:0 8px 24px #0a1a3a14;transition:transform .2s}.k:hover{transform:translateY(-3px)}
+.k small{color:var(--mut);font-weight:600;font-size:12px}.k b{display:block;font-size:clamp(24px,3.2vw,31px);font-weight:800;letter-spacing:-.02em;margin-top:2px}.k span{font-size:12px;color:var(--mut)}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr));gap:14px;margin-bottom:14px}
+.c{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:18px;min-width:0}.full{grid-column:1/-1}
+h2{font-size:16px;margin:0 0 2px;font-weight:700}.sub{font-size:12px;color:var(--mut);margin:0 0 10px}
+ul.ins{margin:8px 0 0;padding-left:20px}ul.ins li{margin:6px 0}.note{font-size:13px;color:var(--mut)}
+.tb{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.tb input,.tb select{font:500 14px "Plus Jakarta Sans",sans-serif;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 12px}.tb input{flex:1;min-width:200px}
+.sc{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums}
+th,td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}.r{text-align:right}
+th button{font:700 12px "Plus Jakarta Sans",sans-serif;color:var(--mut);background:none;border:0;cursor:pointer;padding:0;text-transform:uppercase;letter-spacing:.04em}
+tbody tr:hover{background:var(--bg)}.nv{font-size:11px;background:var(--ac);color:#fff;border-radius:99px;padding:1px 7px;margin-left:6px}
+.mais{margin-top:12px;font:600 13px "Plus Jakarta Sans",sans-serif;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:99px;padding:8px 16px;cursor:pointer}
+footer{font-size:12px;color:var(--mut);margin-top:22px;border-top:1px solid var(--line);padding-top:14px}
+.tg{float:right;font:600 13px "Plus Jakarta Sans",sans-serif;background:#ffffff26;color:#fff;border:0;border-radius:99px;padding:7px 14px;cursor:pointer}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.k{transition:none}}
+</style>
+__PLOTLYJS__
+</head><body>
+<header><div class="w"><button class="tg" id="tg" aria-label="Alternar tema claro ou escuro">Alternar tema</button><small>Dados abertos do Banco Central do Brasil</small>
+<h1>Pix em números: chaves e usuários</h1>
+<p>Como o estoque de chaves Pix cresceu entre jan/2025 e out/2026, quais instituições concentram esse crescimento e como o cadastro de usuários evoluiu desde o lançamento.</p></div></header>
+<main>
+<div class="kp">__KPIS__</div>
+<div class="c full rv"><h2>O que os dados mostram</h2><ul class="ins">__ACHADOS__</ul></div>
+<div class="g" style="margin-top:14px">
+<div class="c full rv"><h2>Estoque de chaves por mês</h2><p class="sub">Total de chaves cadastradas no fim de cada mês e variação em relação ao mês anterior</p>__TOTAL__</div>
+<div class="c rv"><h2>Maiores instituições em chaves</h2><p class="sub">Top 15 no último mês, coloridas por segmento</p>__RANKING__</div>
+<div class="c rv"><h2>Quem mais ganhou e quem mais perdeu</h2><p class="sub">Variação do estoque entre o primeiro e o último mês (10 maiores ganhos e 5 maiores quedas)</p>__GANHO__</div>
+<div class="c full rv"><h2>Evolução das 10 maiores instituições</h2><p class="sub">Use o menu no canto superior esquerdo do gráfico para ver uma instituição de cada vez</p>__SERIES__</div>
+<div class="c full rv"><h2>Todas as instituições</h2><p class="sub">__NINST__ instituições com chaves no último mês. Busque pelo nome, filtre por segmento e clique no título de uma coluna para ordenar.</p>
+<div class="tb"><input id="q" type="search" placeholder="Buscar instituição" aria-label="Buscar instituição"><select id="sg" aria-label="Filtrar por segmento"></select><span id="ct" class="note"></span></div>
+<div class="sc"><table id="t"><thead><tr><th><button data-k="pos">#</button></th><th><button data-k="nome">Instituição</button></th><th><button data-k="seg">Segmento</button></th><th class="r"><button data-k="ch">Chaves</button></th><th class="r"><button data-k="pt">Participação</button></th><th class="r"><button data-k="gn">Ganho no período</button></th><th class="r"><button data-k="vp">Variação</button></th></tr></thead><tbody></tbody></table></div>
+<button class="mais" id="mais">Mostrar mais</button></div>
+<div class="c rv"><h2>Tipo de chave</h2><p class="sub">Participação de cada tipo no estoque, mês a mês</p>__TIPO__</div>
+<div class="c rv"><h2>Segmento das instituições</h2><p class="sub">Participação no estoque de chaves, primeiro e último mês</p>__SEGMENTO__</div>
+<div class="c rv"><h2>Pessoa física e jurídica</h2><p class="sub">Estoque do último mês por tipo de chave e natureza do usuário</p>__NATUREZA__</div>
+<div class="c rv"><h2>Instituições com chaves</h2><p class="sub">Quantas instituições tinham chaves cadastradas em cada mês</p>__PART__</div>
+<div class="c rv"><h2>Usuários cadastrados no DICT</h2><p class="sub">Desde nov/2020, pessoas físicas e jurídicas</p>__DICT__</div>
+<div class="c rv"><h2>Ritmo de novos usuários</h2><p class="sub">Novos usuários por mês e média móvel de 12 meses</p>__NOVOS__</div>
+<div class="c rv"><h2>Crescimento do DICT em 12 meses</h2><p class="sub">Variação percentual do total de usuários sobre o mesmo mês do ano anterior</p>__CRESC__</div>
+<div class="c rv"><h2>Chaves por usuário</h2><p class="sub">Chaves cadastradas nas instituições dividido pelos usuários do DICT, nos meses em comum. Referência, não medida exata.</p>__USUARIO__</div>
+</div>
+<div class="c rv"><h2>Como ler este painel</h2><p class="note"><b>Chave não é cliente.</b> Uma pessoa pode ter várias chaves, em várias instituições, por isso o painel fala em chaves cadastradas na instituição e não em clientes. Os dados de chaves são o estoque no último dia de cada mês, então valores de meses diferentes não devem ser somados. A razão de chaves por usuário compara duas séries com definições diferentes e serve só como referência. Este painel não mede valor nem quantidade de transações: usa apenas estoque de chaves e cadastro de usuários. Participações calculadas em SQL (SQLite) a partir dos arquivos originais, com conferência automática de que os totais fecham.</p></div>
+<footer>Fonte: Banco Central do Brasil, Estatísticas do Pix (dados abertos): “Estoque de chaves Pix por participante” e “Usuários cadastrados no DICT”. Projeto independente de análise de dados com SQL e Python (pandas e Plotly). Análise: Cauã Venseguerra Nascimento.</footer>
+</main>
+<script>
+const T=__TABELA__,$=i=>document.getElementById(i),f0=v=>v.toLocaleString('pt-BR'),f1=v=>v.toLocaleString('pt-BR',{minimumFractionDigits:1,maximumFractionDigits:1});
+let ord='pos',asc=true,lim=25;
+[...new Set(T.map(x=>x.seg))].sort().forEach(s=>$('sg').add(new Option(s,s)));$('sg').insertBefore(new Option('Todos os segmentos',''),$('sg').firstChild);$('sg').value='';
+function tab(){const q=$('q').value.toLowerCase().trim(),s=$('sg').value,r=T.filter(x=>(!q||x.nome.toLowerCase().includes(q))&&(!s||x.seg===s));
+r.sort((a,b)=>{const u=a[ord],v=b[ord],c=typeof u==='string'?u.localeCompare(v,'pt-BR'):(u??-1e18)-(v??-1e18);return asc?c:-c});
+$('t').tBodies[0].innerHTML=r.slice(0,lim).map(x=>`<tr><td>${x.pos}</td><td>${x.nome}${x.nova?'<span class="nv">nova</span>':''}</td><td>${x.seg}</td><td class="r">${f0(x.ch)}</td><td class="r">${f1(x.pt)}%</td><td class="r">${x.gn>0?'+':''}${f0(x.gn)}</td><td class="r">${x.vp==null?'sem base':(x.vp>0?'+':'')+f1(x.vp)+'%'}</td></tr>`).join('');
+$('ct').textContent=`Mostrando ${Math.min(lim,r.length)} de ${r.length}`;$('mais').style.display=r.length>lim?'':'none'}
+$('q').oninput=()=>{lim=25;tab()};$('sg').onchange=()=>{lim=25;tab()};$('mais').onclick=()=>{lim+=50;tab()};
+document.querySelectorAll('th button').forEach(b=>b.onclick=()=>{const k=b.dataset.k;asc=ord===k?!asc:(k==='nome'||k==='seg'||k==='pos');ord=k;tab()});tab();
+function tema(){const dk=matchMedia('(prefers-color-scheme:dark)').matches,t=document.documentElement.dataset.theme,d=t?t==='dark':dk,c=d?'#E8EEF4':'#0E1F2E',g=d?'#223340':'#DAE2E9';
+document.querySelectorAll('.js-plotly-plot').forEach(gd=>{const u={'font.color':c,'xaxis.gridcolor':g,'yaxis.gridcolor':g};if(gd.layout.yaxis2)u['yaxis2.gridcolor']=g;Plotly.relayout(gd,u)})}
+document.getElementById('tg').onclick=()=>{const dk=matchMedia('(prefers-color-scheme:dark)').matches,n=document.documentElement.dataset.theme||(dk?'dark':'light');document.documentElement.dataset.theme=n==='dark'?'light':'dark';tema()};
+matchMedia('(prefers-color-scheme:dark)').addEventListener('change',tema);
+const io=window.IntersectionObserver?new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);window.dispatchEvent(new Event('resize'))}}),{threshold:.05}):null;
+document.querySelectorAll('.rv').forEach(c=>io?io.observe(c):c.classList.add('in'));
+window.addEventListener('load',()=>setTimeout(tema,50));
+</script></body></html>
