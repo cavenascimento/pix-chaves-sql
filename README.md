@@ -136,4 +136,6 @@ SQL (SQLite), Python, pandas, Plotly, HTML/CSS/JavaScript, GitHub Pages e IA gen
 ## Autor
 
 **Cauã Venseguerra Nascimento**: dados, BI e automação.
-LinkedIn: [adicione aqui o link do seu perfil]
+LinkedIn: www.linkedin.com/in/cauã-venseguerra-nascimento-5918833a5
+
+
